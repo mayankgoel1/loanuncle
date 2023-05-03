@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+
+/* Universal CSS */
+p,h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+
+#hero, #about, #services, #features, #contact{
+    padding-top:40px;
+    min-height: 80vh !important;
+    background-color: rgb(232 255 232);
+}
+
+#footer{
+    background-color: var(--primary-color);
+    color: white;
+}
+body {
+    --primary-color-opaque:#172affce;
+    --primary-color:#1736ff;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+/* Navabar CSS */
+
+.navbar-top-left{
+    font-size: 13px !important;
+}
+
+.navbar-top{
+    background-color: var(--primary-color);
+}
+.navbar-right{
+    margin-left: auto;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar{
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    z-index: 9999;
+}
+
+.navbar-collapse{
+    
+    justify-content: flex-end;
+}
+.navbar-nav{
+    align-items: center;
+}
+
+
+/* Hero Section CSS */
+
+#hero{
+    /* background:linear-gradient(to right,white,var(--primary-color-opaque)); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-head{
+    font-weight:900;
+    font-size: 80px;
+    width: 40vw;
+    line-height: 80px;
+}
+.hero-btn{
+    background-color: var(--primary-color);
+    border-radius: 200px;
+    padding: 5px 20px;
+    
+    color: white;
+    border: none;
+}
+
+
+
+
+
+
+/* Features CSS */
+
+.slider-icon{
+    color: rgba(128, 128, 128, 0.324);
+}
+
+#features{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.features-head{
+    font-size: 40px;
+    font-weight: 800;
+    
+
+}
+
+.features-para{
+    color: rgb(115, 115, 115);
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+/* About CSS */
+.about-para{
+    line-height: 30px;
+}
+
+.about-hr{
+    height: 3px;
+    margin: 10px auto;
+    background-color: var(--primary-color)
+}
+
+#about{
+    height: 100vh;
+}
+
+
+.about-left{
+    background-image: url('../images/AboutImage.png');
+    height: 80vh;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+
+
+/* Contact CSS */
+#contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input, textarea{
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin:20px 0px !important;
+}
+
+#contact button{
+    margin: 10px 0px;
+}
+
+#contact-form-error{
+    font-size: 12px;
+}
+
+
+
+/* Footer CSS */
+
+.footer{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 12px;
+}
+
+
+
+/* Service CSS */
+.service-card-icon{
+    background-color: rgba(126, 146, 246, 0.256);
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 200px;
+    margin: auto;
+}
+
+
+.sv-card{
+    height: fit-content !important;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0px;
+    
+}
+
+
+.sv-grid{
+    margin: auto;
+    width: 70vw;
+}
+
+
+
+.contact-icon{
+    font-size: 20px;
+    opacity: 30%;
+}
+
+
+@media screen and (max-width:768px) {
+    #hero, #about, #features, #contact{
+        height: fit-content !important;
+    }
+
+    .about-left{
+        height: 300px;
+    }
+    .card{
+        margin:auto
+    }
+    .hero-head{
+        font-size: 70px;
+        width: 100%;
+    }
+    .features-para{
+        width: 100%;
+    }
+    #navIcons{
+        display: none;
+    }
+}
